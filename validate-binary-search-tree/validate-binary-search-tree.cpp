@@ -26,6 +26,7 @@ public:
         for(int i =0; i < ans.size()-1; i++){ 
             if(ans[i] >= ans[i+1]) res = false; 
         }
+        ans.clear(); 
         return res; 
     }
 };
