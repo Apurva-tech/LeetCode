@@ -13,6 +13,7 @@ class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
         if(root == NULL) return root;
+        // Interchange right and left subtree recursilvely
         TreeNode *right = invertTree(root->right); 
         TreeNode *left = invertTree(root->left); 
         root->right = left; 
