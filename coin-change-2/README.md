@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/7/2021 at 12:20)](https://leetcode.com/problems/coin-change-2/discuss/1400775/Aditya-Verma's-Coin-change-problem-using-DP-(Unbounded-Knapsack)-oror-with-Comments-oror-C%2B%2B-Solution)  
 <h2>518. Coin Change 2</h2><h3>Medium</h3><hr><div><p>You are given an integer array <code>coins</code> representing coins of different denominations and an integer <code>amount</code> representing a total amount of money.</p>
 
 <p>Return <em>the number of combinations that make up that amount</em>. If that amount of money cannot be made up by any combination of the coins, return <code>0</code>.</p>
