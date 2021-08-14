@@ -19,15 +19,19 @@ public:
         helper(root->right, res); 
     }
     bool findTarget(TreeNode* root, int k) {
-        
+        if(!root->left && !root->right) return false;
         vector<int> res; 
         helper(root, res); 
-        bool ans = false; 
-        for(int i = 0; i < res.size(); ++i){
-            if(binary_search(res.begin(), res.end(), k - res[i]) && (lower_bound(res.begin(), res.end(), k - res[i]) - res.begin() != i)) 
-            ans = true;
+        
+        int l = 0, h = res.size()-1; 
+        
+        while(l < h){
+            cout << res[l] + res[h] << " "; 
+            if(res[l] + res[h] == k) return true; 
+            if(res[l] + res[h] < k) l++; 
+            else if(res[l] + res[h] > k) h--; 
         }
-
-        return ans; 
+        
+        return false; 
     }
 };
