@@ -37,6 +37,7 @@ public:
                 currSize -= 1;
                 q.pop();
 
+                //Check for left child
                 if (currNode->left)
                     q.push(currNode->left);
                 //Check for right child
