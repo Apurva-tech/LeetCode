@@ -19,6 +19,7 @@ public:
             sum += pq.top();
             pq.pop();
         }
+        
         return sum;
         
     }
