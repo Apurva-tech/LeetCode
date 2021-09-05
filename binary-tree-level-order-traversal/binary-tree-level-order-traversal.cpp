@@ -26,7 +26,6 @@ public:
         {
             int currSize = q.size();
             vector<int> currList;
-
             while (currSize > 0)
             {
                 // Dequeue element
