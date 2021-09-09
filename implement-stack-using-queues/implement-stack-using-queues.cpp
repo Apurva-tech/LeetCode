@@ -11,7 +11,6 @@ public:
             q.pop();
         }
     }
-    
     int pop() {
         s=q.front();
         q.pop();
