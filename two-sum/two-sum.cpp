@@ -12,7 +12,6 @@ public:
             }
             else mp[res[i]] = i; 
         }
-        
-        return ans;  
+        return ans; 
     }
 };
