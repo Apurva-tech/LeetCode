@@ -18,6 +18,8 @@ public:
             res.push_back(temp->val); 
             temp = temp->next; 
         }
+
+
         sort(res.begin(), res.end()); 
         ListNode *nw = new ListNode(res[0]);
         ListNode *h = nw; 
