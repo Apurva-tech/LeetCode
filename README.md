@@ -6,7 +6,7 @@
 
 # My Leetcode:
 
-[mindwr4pper](https://leetcode.com/mindwr4pper/)
+[mindwr4pper](https://leetcode.com/mindwr4pper/) [Linkedin](https://www.linkedin.com/in/apurva866/)
 
 # Credits 🥇
 
