@@ -10,6 +10,8 @@
 
 [Linkedin](https://www.linkedin.com/in/apurva866/)
 
-# Credits 
+[Twitter](https://twitter.com/mindwrapper)
+
+# Credits
 
 Collection of LeetCode questions to ace the coding interview - Created using [LeetHub](https://github.com/QasimWani/LeetHub).
