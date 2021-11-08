@@ -12,7 +12,8 @@
 
 [Twitter](https://twitter.com/mindwrapper)
 
-[Blogs at](https://medium.com/@apurva866)
+[Blogs](https://medium.com/@apurva866)
+
 
 # Credits
 
