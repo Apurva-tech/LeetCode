@@ -12,7 +12,7 @@
 
 [Twitter](https://twitter.com/mindwrapper)
 
-[Blogs](https://medium.com/@apurva866)
+[Blog-Medium](https://medium.com/@apurva866)
 
 
 # Credits
