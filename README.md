@@ -6,14 +6,13 @@
 
 # My Leetcode:
 
-[mindwr4pper](https://leetcode.com/mindwr4pper/)
+[Leetcode](https://leetcode.com/mindwr4pper/)
 
 [Linkedin](https://www.linkedin.com/in/apurva866/)
 
 [Twitter](https://twitter.com/mindwrapper)
 
 [Blog-Medium](https://medium.com/@apurva866)
-
 
 # Credits
 
