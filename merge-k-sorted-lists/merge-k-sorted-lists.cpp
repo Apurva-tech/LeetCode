@@ -25,7 +25,6 @@ public:
         
         sort(res.begin(), res.end()); 
         
-        // for(auto x:res) cout << res[x] << " ";
         
         ListNode *nw = new ListNode(res[0]), *head = nw; 
         
