@@ -11,8 +11,7 @@ public:
     
     int rangeSumBST(TreeNode* root, int low, int high) {
         if(root == NULL) return 0; 
-        helper(root, low, high); 
-        
+        helper(root, low, high);   
         return ans; 
     }
 };
