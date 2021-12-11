@@ -2,7 +2,7 @@
 class Solution {
 public:
     int N;
-    int b=0;    // total number of blacklist element
+    int b=0;    
     unordered_map<int,int> mp;  // for remapping of blacklist element in range(0,N-b) to un blacklist
                                 // element in range [N-b,N)
 
