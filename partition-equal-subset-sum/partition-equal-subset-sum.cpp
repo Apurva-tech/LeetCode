@@ -2,7 +2,8 @@ class Solution {
 public:
     bool isSubset(vector<int> arr, int sum){
         int n = arr.size(); 
-        int t[n+1][sum+1]; 
+        bool t[n+1][sum+1]; 
+        
         // Initialisation
         for(int i = 0; i < n+1; i++)
             for(int j = 0; j < sum+1; ++j ){
