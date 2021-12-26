@@ -17,7 +17,7 @@ public:
         
         unordered_map<int, double> :: iterator itr;
         for(itr=mp.begin();itr!=mp.end();itr++){
-            cout << "dist: " << itr->second << " ind: " << itr->first << endl; 
+            // cout << "dist: " << itr->second << " ind: " << itr->first << endl; 
             pq.push(make_pair(itr->second , itr->first));
         }
         vector<vector<int>> ans(k);
