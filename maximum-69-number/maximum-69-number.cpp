@@ -13,7 +13,6 @@ public:
         
         if (j == -1)
             return num;
-        
         return num + pow(10, j)*3;
     }
 };
