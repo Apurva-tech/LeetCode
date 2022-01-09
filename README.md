@@ -4,7 +4,7 @@
 
 ### ➡ [Instruction](https://github.com/SeanPrashad/leetcode-patterns)
 
-# My Profile:
+# My Profiles
 
 [Leetcode](https://leetcode.com/mindwr4pper/)
 
