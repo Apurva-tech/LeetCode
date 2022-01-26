@@ -19,6 +19,7 @@ public:
         
         inorder(root->right); 
     }
+    
     vector<int> getAllElements(TreeNode* root1, TreeNode* root2) {
         inorder(root1); 
         inorder(root2);
