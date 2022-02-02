@@ -1,31 +1,26 @@
+typedef pair<int, int> pi;
+  
 class Solution {
 public:
     vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
-        // priority_queue <int, vector<int>, greater<int>> gq;
-        // vector<int> res;
-        // for(auto x : mat){
-        //     int soldiers = 0; 
-        //     for(auto y : x){
-        //         if(y == 1) soldiers++;
-        //     }
-        //     gq.push(soldiers); 
-        // }
-        // while (!gq.empty()) { 
-        //     int t = gq.top(); 
-        //     gq.pop();
-        //     auto it = find(gq.begin(), gq.end(), t); 
-        //     res.push_back(it - v.begin()); 
-        // }
-        // return res;
-        int n=mat[0].size();
-        for(int i=0; i<mat.size(); i++){
-            mat[i].push_back(i);
+        priority_queue<pi, vector<pi>, greater<pi> > pq;
+        vector<int> res, num;
+        for(int i = 0; i < mat.size(); i++){
+            int soldiers = 0; 
+            for(auto y : mat[i]){
+                if(y == 1) soldiers++;
+            }
+            // cout << i << " total sold: " << soldiers << endl;
+            pq.push(make_pair(soldiers, i));
         }
-        sort(mat.begin(), mat.end());
-        vector<int> ans(k);
-        for(int i=0; i<k; i++){
-            ans[i]=mat[i][n];            
+        while (!pq.empty() && k > 0) { 
+            k--;
+            pair<int, int> top = pq.top();
+            res.push_back(top.second);
+            // cout << top.first << " " << top.second;
+            pq.pop();
         }
-        return ans;
+        return res;
+        
     }
 };
