@@ -14,10 +14,11 @@ public:
         if(head == NULL || head->next == NULL) return head; 
         if( head->next->next == NULL) {
             ListNode *t = head->next;
-             head->next->next = head;
-              head->next = NULL;
-             return  t; 
+            head->next->next = head;
+            head->next = NULL;
+            return  t; 
         }
+        
         ListNode *t1 = head, *t2 = head->next->next , *curr = head->next , *new_head = head->next; 
         while(curr!=NULL){
             cout << curr->val; 
