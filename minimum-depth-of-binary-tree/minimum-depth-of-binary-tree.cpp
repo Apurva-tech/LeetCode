@@ -2,6 +2,7 @@
 class Solution {
 public:
     int helper(TreeNode *root){
+        
         // helper function
         if(root == NULL) return 0; 
         int lh = minDepth(root->left); 
