@@ -5,7 +5,9 @@ public:
         if(head == NULL || head->next == NULL) return head;
         ListNode small(0); 
         ListNode big(0);
+        
         ListNode *sm = &small, *bg = &big; 
+
         while(head!=nullptr){
             if(head->val < x){
                 sm -> next = head; 
