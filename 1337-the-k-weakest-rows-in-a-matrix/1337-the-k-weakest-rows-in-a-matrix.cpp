@@ -1,26 +1,27 @@
-typedef pair<int, int> pi;
-  
 class Solution {
 public:
     vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
-        priority_queue<pi, vector<pi>, greater<pi> > pq;
-        vector<int> res, num;
-        for(int i = 0; i < mat.size(); i++){
-            int soldiers = 0; 
-            for(auto y : mat[i]){
-                if(y == 1) soldiers++;
-            }
-            // cout << i << " total sold: " << soldiers << endl;
-            pq.push(make_pair(soldiers, i));
-        }
-        while (!pq.empty() && k > 0) { 
-            k--;
-            pair<int, int> top = pq.top();
-            res.push_back(top.second);
-            // cout << top.first << " " << top.second;
-            pq.pop();
-        }
-        return res;
+        int row = mat.size();
+        int col = mat[0].size();
         
+        vector<pair<int, int>> v(row);
+        
+        for (int i = 0; i < row; ++i) {
+            int count = 0;
+            for (int j = 0; j < col; ++j) {
+                if (mat[i][j] == 1)
+                    count++;
+            }
+            v[i] = {count, i};
+        }
+        
+        sort(v.begin(), v.end());
+        
+        vector<int> ans;
+        for (int i = 0; i < k; ++i) {
+            ans.push_back(v[i].second);
+        }
+        
+        return ans;
     }
 };
