@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* partition(ListNode* head, int x) {
+
         if(head == NULL || head->next == NULL) return head;
         ListNode small(0); 
         ListNode big(0);
