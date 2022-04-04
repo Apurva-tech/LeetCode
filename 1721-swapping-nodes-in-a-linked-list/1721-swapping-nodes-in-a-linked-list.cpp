@@ -10,25 +10,31 @@
  */
 class Solution {
 public:
-    ListNode* swapNodes(ListNode* head, int k) {
-         ListNode *left = head, *right = head;
-        ListNode *first = NULL, *second = NULL;
-        
-        for (k; k > 1; --k)
-            right = right->next;
-        first = right;
-        
-        while (right->next)
-        {
-            left = left->next;
-            right = right->next;
+    int FindN(ListNode *head){
+        int n = 0;
+        while(head){
+            n++;
+            head = head->next;
         }
-        second = left;
+        return n;
+    }
+    
+    ListNode* swapNodes(ListNode* head, int k) {
+        ListNode *temp1 = head, *temp2 = head; 
+        int nk = FindN(head) - k;
+        cout << nk ;
+        while(k-- > 1){
+            temp1 = temp1->next; 
+        }
+        while(nk-- > 0){
+            temp2 = temp2->next; 
+        }
         
-        k = first->val;
-        first->val = second->val;
-        second->val = k;
+        int t = temp1->val;
+        temp1->val = temp2->val; 
+        temp2->val = t;
         
+        // cout << temp->val; 
         return head;
     }
 };
