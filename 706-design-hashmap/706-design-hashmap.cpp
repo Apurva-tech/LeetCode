@@ -1,5 +1,6 @@
 class MyHashMap {
 public:
+    // Excess
     int data[1000001];
     MyHashMap() {
         fill(data, data + 1000000, -1);
