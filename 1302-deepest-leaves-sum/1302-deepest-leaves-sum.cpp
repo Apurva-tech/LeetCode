@@ -15,6 +15,7 @@ public:
         if(root == NULL) return 0;
         int n = 0;
         queue<TreeNode*> q; 
+        
         q.push(root);
         
         while(!q.empty()){
@@ -41,6 +42,7 @@ public:
             while(size > 0){
                 TreeNode* curr = new TreeNode();
                 curr = q.front();
+                
                 size --; 
                 q.pop(); 
                 if(curr->left) q.push(curr->left); 
