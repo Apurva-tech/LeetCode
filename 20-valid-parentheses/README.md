@@ -8,7 +8,8 @@
 </ol>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong>Example 1:</strong>
+</p>
 
 <pre><strong>Input:</strong> s = "()"
 <strong>Output:</strong> true
