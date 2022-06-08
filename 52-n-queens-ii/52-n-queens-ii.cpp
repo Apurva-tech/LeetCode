@@ -8,9 +8,7 @@ public:
         
         for(int i=0;i<n;i++) {
             if(c.find(i) == c.end() && d1.find(r-i) == d1.end() && d2.find(r+i) == d2.end()) {
-                
                 c.insert(i); d1.insert(r-i); d2.insert(r+i);
-                
                 temp[r][i] = 'Q';
                 fun(ans, temp, r+1, c, d1, d2, n);
                 temp[r][i] = '.';
