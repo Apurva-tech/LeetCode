@@ -6,7 +6,6 @@ public:
         
         if(divisor == 1) return  dividend; 
         
-        // Take abs of long double
         long double longDividend = labs(dividend);
         long double longDivisor = labs(divisor);
      
